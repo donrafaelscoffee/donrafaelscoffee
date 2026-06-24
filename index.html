@@ -1,58 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Don Rafael's Coffee</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Don Rafael's Coffee</title>
 
-    <style>
-        body {
-            background-color: #f8f3ed;
-            font-family: Lobster;
-            text-align: center;
-            padding-top: 100px;
-            color: #3b2b1f;
-        }
+  <!-- Correct Google Font import -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
-        h1 {
-            color: #c62828;
-            font-size: 60px;
-            margin-bottom: 10px;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
 
-        h2 {
-            font-weight: normal;
-            margin-bottom: 40px;
-        }
+    .container {
+      max-width: 720px;
+      padding: 20px;
+    }
 
-        a {
-            display: inline-block;
-            padding: 15px 30px;
-            background: #c62828;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-        }
+    h1 {
+      font-family: "Lobster", cursive !important;
+      font-size: 72px;
+      color: #c1121f;
+      margin: 0;
+    }
 
-        a:hover {
-            opacity: .9;
-        }
-    </style>
+    p {
+      font-size: 20px;
+      color: #333;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 14px 28px;
+      background-color: #c1121f;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #a50f19;
+      transform: translateY(-2px);
+    }
+  </style>
 </head>
 
 <body>
-
+  <div class="container">
     <h1>Don Rafael's</h1>
 
+    <p>South Florida's Puerto Rican Coffee</p>
 
-    <p>
-        Authentic Puerto Rican Coffee.<br>
-        Pop-Ups • Catering • Community
-    </p>
-
-    <br>
-
-    <a href="https://instagram.com/donrafaelscoffee">
-        Get to Know us Familia!
+    <a class="cta-button" href="https://instagram.com/donrafaelscoffee" target="_blank">
+      Cafecito y la familia!
     </a>
-
+  </div>
 </body>
 </html>
