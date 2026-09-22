@@ -1,161 +1,292 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Don Rafael's Coffee</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<meta charset="UTF-8" />
 
-  <style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    /* ===== BACKGROUND (NEW PREMIUM FEEL) ===== */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
+<title>Don Rafael's Coffee</title>
 
-      /* soft café-style gradient */
-      background: linear-gradient(
-        180deg,
-        #ffffff 0%,
-        #fff9f7 100%
-      );
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
+<style>
 
-    /* ===== TOP CTA ===== */
-    .quote-button {
-      position: fixed;
-      top: 25px;
-      right: 25px;
+/* ===== FULL-SCREEN PHOTO BACKGROUND ===== */
 
-      background-color: #4EA5D9;
-      color: white;
-      text-decoration: none;
+body {
 
-      padding: 12px 22px;
-      border-radius: 12px;
+margin: 0;
 
-      font-weight: 700;
-      font-size: 14px;
+font-family: Arial, sans-serif;
 
-      box-shadow: 0 6px 18px rgba(0,0,0,.12);
-      transition: all 0.25s ease;
-    }
+background-image:
+linear-gradient(
+rgba(0, 0, 0, 0.40),
+rgba(0, 0, 0, 0.40)
+),
+url("alexis-antonio-qoOUxBVJGE0-unsplash.jpg");
 
-    .quote-button:hover {
-      background-color: #2f8cc5;
-      transform: translateY(-3px);
-    }
+background-size: cover;
 
-    /* ===== CENTER CONTENT ===== */
-    .container {
-      max-width: 720px;
-      padding: 20px;
-    }
+background-position: center;
 
-    h1 {
-      font-family: "Lobster", cursive;
-      font-size: 78px;
-      color: #c1121f;
-      margin: 0;
-      letter-spacing: 0.5px;
-    }
+background-repeat: no-repeat;
 
-    /* tagline upgraded spacing */
-    .tagline {
-      font-size: 21px;
-      color: #222;
-      margin-top: 12px;
-      margin-bottom: 6px;
-      font-weight: 500;
-    }
+background-attachment: fixed;
 
-    /* subline becomes service positioning */
-    .subline {
-      font-size: 14px;
-      color: #777;
-      margin-bottom: 34px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
+display: flex;
 
-    /* ===== PRIMARY CTA ===== */
-    .cta-button {
-      display: inline-block;
+justify-content: center;
 
-      padding: 14px 30px;
-      background-color: #c1121f;
-      color: white;
+align-items: center;
 
-      text-decoration: none;
-      font-size: 16px;
-      border-radius: 12px;
+min-height: 100vh;
 
-      font-weight: 700;
+text-align: center;
 
-      transition: all 0.25s ease;
-      box-shadow: 0 6px 18px rgba(193,18,31,0.18);
-    }
+}
 
-    .cta-button:hover {
-      background-color: #a50f19;
-      transform: translateY(-3px);
-    }
 
-    /* ===== MOBILE ===== */
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 56px;
-      }
+/* ===== TOP CTA ===== */
 
-      .quote-button {
-        top: 15px;
-        right: 15px;
-        padding: 10px 16px;
-      }
+.quote-button {
 
-      .tagline {
-        font-size: 18px;
-      }
-    }
+position: fixed;
 
-  </style>
+top: 25px;
+
+right: 25px;
+
+background-color: #4EA5D9;
+
+color: white;
+
+text-decoration: none;
+
+padding: 12px 22px;
+
+border-radius: 12px;
+
+font-weight: 700;
+
+font-size: 14px;
+
+box-shadow: 0 6px 18px rgba(0,0,0,.18);
+
+transition: all 0.25s ease;
+
+}
+
+.quote-button:hover {
+
+background-color: #2f8cc5;
+
+transform: translateY(-3px);
+
+}
+
+
+/* ===== CENTER CONTENT ===== */
+
+.container {
+
+max-width: 720px;
+
+padding: 20px;
+
+}
+
+
+/* ===== BRAND NAME ===== */
+
+h1 {
+
+font-family: "Lobster", cursive;
+
+font-size: 78px;
+
+color: #ffffff;
+
+margin: 0;
+
+letter-spacing: 0.5px;
+
+text-shadow: 0 4px 16px rgba(0,0,0,0.45);
+
+}
+
+
+/* ===== TAGLINE ===== */
+
+.tagline {
+
+font-size: 21px;
+
+color: #ffffff;
+
+margin-top: 12px;
+
+margin-bottom: 6px;
+
+font-weight: 500;
+
+text-shadow: 0 2px 10px rgba(0,0,0,0.45);
+
+}
+
+
+/* ===== SERVICE POSITIONING ===== */
+
+.subline {
+
+font-size: 14px;
+
+color: #ffffff;
+
+margin-bottom: 34px;
+
+letter-spacing: 1px;
+
+text-transform: uppercase;
+
+text-shadow: 0 2px 8px rgba(0,0,0,0.45);
+
+}
+
+
+/* ===== PRIMARY CTA ===== */
+
+.cta-button {
+
+display: inline-block;
+
+padding: 14px 30px;
+
+background-color: #c1121f;
+
+color: white;
+
+text-decoration: none;
+
+font-size: 16px;
+
+border-radius: 12px;
+
+font-weight: 700;
+
+transition: all 0.25s ease;
+
+box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+
+}
+
+
+.cta-button:hover {
+
+background-color: #a50f19;
+
+transform: translateY(-3px);
+
+}
+
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+body {
+
+background-attachment: scroll;
+
+background-position: center center;
+
+}
+
+h1 {
+
+font-size: 56px;
+
+}
+
+.quote-button {
+
+top: 15px;
+
+right: 15px;
+
+padding: 10px 16px;
+
+}
+
+.tagline {
+
+font-size: 18px;
+
+}
+
+.subline {
+
+font-size: 12px;
+
+}
+
+}
+
+</style>
+
 </head>
+
 
 <body>
 
-  <!-- TOP RIGHT CTA -->
-  <a
-    class="quote-button"
-    href="https://app.flashquotes.com/f/nusxmt"
-    target="_blank"
-  >
-    Get Your Custom Quote
-  </a>
 
-  <div class="container">
+<!-- TOP RIGHT CTA -->
 
-    <h1>Don Rafael's</h1>
+<a
 
-    <div class="tagline">South Florida's Puerto Rican Coffee</div>
+class="quote-button"
 
-    <div class="subline">Pop-Ups • Catering • Community</div>
+href="https://app.flashquotes.com/f/nusxmt"
 
-    <a
-      class="cta-button"
-      href="https://instagram.com/donrafaelscoffee"
-      target="_blank"
-    >
-      Cafecito y la Familia!
-    </a>
+target="_blank"
 
-  </div>
+>
+
+Get Your Custom Quote
+
+</a>
+
+
+<!-- CENTER CONTENT -->
+
+<div class="container">
+
+<h1>Don Rafael's</h1>
+
+<div class="tagline">South Florida's Puerto Rican Coffee</div>
+
+<div class="subline">Pop-Ups • Catering • Community</div>
+
+<a
+
+class="cta-button"
+
+href="https://instagram.com/donrafaelscoffee"
+
+target="_blank"
+
+>
+
+Cafecito y la Familia!
+
+</a>
+
+</div>
+
 
 </body>
+
 </html>
